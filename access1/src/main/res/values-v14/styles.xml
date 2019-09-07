@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- <item name="android:windowBackground">@drawable/d5</item> -->
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+
+        <!-- 以下三个item后期添加，不需要，显示动画效果 ，应该是默认实现的 -->
+        <!--
+         	<item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+        -->
+        <!-- 状态栏颜色 -->
+        <!--
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        控制各个控件被选中时的颜色
+        <item name="colorAccent">@color/colorAccent</item>
+        Appbar背景色
+        <item name="colorPrimary">@color/colorPrimary</item>
+        底部导航栏颜色
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        -->
+        <!-- 安卓4.4属性，窗口是否为半透明 -->
+        <!-- <item name="android:windowTranslucentStatus">true</item> -->
+        <!-- 安卓4.4属性 -->
+        <!-- <item name="android:windowTranslucentNavigation">true</item> -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <!-- 该属性不需要，因为apptheme继承了noActionBar -->
+    <style name="AppTheme.NoTitleBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="bottomLineColor" parent="AppBaseTheme">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+    
+    <style name="choose_photo_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/choose_photo_pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/choose_photo_pop_exit</item>
+    </style>
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowIsTranslucent">true</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:background">@null</item>  
+        <item name="android:windowBackground">@null</item>  
+        <item name="android:backgroundDimEnabled">false</item>  
+    </style>
+
+</resources>

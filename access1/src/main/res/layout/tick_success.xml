@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#5B5B5B"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/tick2" />
+
+    <TextView
+        android:id="@+id/tick_success_tv"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:text="保存成功" />
+
+</LinearLayout>

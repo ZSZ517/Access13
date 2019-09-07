@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.example.access1.PorterDuffViewImageView
+            android:id="@+id/porterDuffViewImageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            >
+        </com.example.access1.PorterDuffViewImageView>
+        <!--
+        <ImageView
+            android:id="@+id/portrait_iv"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/portrait_iv_shape"
+            android:src="@drawable/ic_launcher2" />
+        -->
+        <!-- portrait_default -->
+
+        <TextView
+            android:id="@+id/portrait_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="学号"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/other_setting_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/settings_button_shape"
+            android:drawableLeft="@drawable/change_pwd"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/pulldown_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="修改密码" />
+
+        <Button
+            android:id="@+id/other_setting_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/settings_button_shape"
+            android:drawableLeft="@drawable/feedback"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/pulldown_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="意见反馈" />
+
+        <Button
+            android:id="@+id/other_setting_btn4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/settings_button_shape"
+            android:drawableLeft="@drawable/change_account"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/pulldown_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="切换账号" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/other_setting_btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:background="@drawable/green_button_shape"
+        android:text="退出登录" />
+
+</LinearLayout>

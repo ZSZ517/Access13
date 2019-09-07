@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/have_toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+         <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+    -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_base"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:title="这个是havetoolbarlayout默认title"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+    </android.support.v7.widget.Toolbar>
+    <!--
+              <TextView
+                android:id="@+id/textViewInToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:text="首页"
+                android:textSize="22sp" />
+    -->
+    <!-- </android.support.design.widget.AppBarLayout> -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

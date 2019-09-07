@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/horizontal_divider_shape"
+        android:orientation="vertical"
+        android:showDividers="beginning|end" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="旧密码"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="18sp"
+                android:layout_gravity="center_vertical"
+                android:background="#8a000000" />
+
+            <EditText
+                android:id="@+id/change_pwd_et1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:theme="@style/bottomLineColor"
+                android:textSize="18sp"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/horizontal_divider_shape"
+        android:orientation="vertical"
+        android:showDividers="beginning|end" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="新密码"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="18sp"
+                android:layout_gravity="center_vertical"
+                android:background="#8a000000" />
+
+            <EditText
+                android:id="@+id/change_pwd_et2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:theme="@style/bottomLineColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/horizontal_divider_shape"
+        android:orientation="vertical"
+        android:showDividers="beginning|end" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="确认密码"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="18sp"
+                android:layout_gravity="center_vertical"
+                android:background="#8a000000" />
+
+            <EditText
+                android:id="@+id/change_pwd_et3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:theme="@style/bottomLineColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/change_pwd_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_button_shape"
+            android:text="确认"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/change_pwd_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_button_shape"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

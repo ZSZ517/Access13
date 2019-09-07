@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="30dp">
+    <TextView android:text="教师基本信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="上传照片"
+            android:drawableTop="@drawable/d5"/>
+        <LinearLayout android:layout_width="80dp"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

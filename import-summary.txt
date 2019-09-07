@@ -1,0 +1,120 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Access1:
+* ic_launcher-web.png
+* proguard-project.txt
+From android-support-design:
+* .gitignore
+* README.md
+* build.gradle
+From android-support-v4:
+* .gitignore
+* README.md
+* build.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:23.4.0
+gson-2.6.2.jar => com.google.code.gson:gson:2.6.2
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.6.2.jar => version 2.6.2 in com.google.code.gson:gson:2.6.2
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:23.4.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In android-support-v4:
+* AndroidManifest.xml => androidsupportv4\src\main\AndroidManifest.xml
+* assets\ => androidsupportv4\src\main\assets
+* lint.xml => androidsupportv4\lint.xml
+* res\ => androidsupportv4\src\main\res\
+* src\ => androidsupportv4\src\main\java
+* src\.readme => androidsupportv4\src\main\resources\.readme
+* src\android\support\v4\media\MediaMetadataCompat.aidl => androidsupportv4\src\main\aidl\android\support\v4\media\MediaMetadataCompat.aidl
+* src\android\support\v4\media\RatingCompat.aidl => androidsupportv4\src\main\aidl\android\support\v4\media\RatingCompat.aidl
+* src\android\support\v4\media\session\MediaSessionCompat.aidl => androidsupportv4\src\main\aidl\android\support\v4\media\session\MediaSessionCompat.aidl
+* src\android\support\v4\media\session\ParcelableVolumeInfo.aidl => androidsupportv4\src\main\aidl\android\support\v4\media\session\ParcelableVolumeInfo.aidl
+* src\android\support\v4\media\session\PlaybackStateCompat.aidl => androidsupportv4\src\main\aidl\android\support\v4\media\session\PlaybackStateCompat.aidl
+In android-support-design:
+* AndroidManifest.xml => androidsupportdesign\src\main\AndroidManifest.xml
+* assets\ => androidsupportdesign\src\main\assets
+* lint.xml => androidsupportdesign\lint.xml
+* proguard.txt => androidsupportdesign\proguard.txt
+* res\ => androidsupportdesign\src\main\res\
+* src\ => androidsupportdesign\src\main\java
+* src\.readme => androidsupportdesign\src\main\resources\.readme
+In Access1:
+* AndroidManifest.xml => access1\src\main\AndroidManifest.xml
+* assets\ => access1\src\main\assets
+* libs\commons-fileupload-1.4.jar => access1\libs\commons-fileupload-1.4.jar
+* libs\commons-io-2.6.jar => access1\libs\commons-io-2.6.jar
+* libs\glide-3.7.0.jar => access1\libs\glide-3.7.0.jar
+* libs\jsoncode.jar => access1\libs\jsoncode.jar
+* libs\okhttp3.9.1-okio1.13.0.jar => access1\libs\okhttp3.9.1-okio1.13.0.jar
+* libs\pinyin4j-2.5.0.jar => access1\libs\pinyin4j-2.5.0.jar
+* res\ => access1\src\main\res\
+* src\ => access1\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
