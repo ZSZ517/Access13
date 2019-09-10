@@ -4,38 +4,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.example.access1.CircleSurfaceView
-        android:id="@+id/circle_surface_view"
-        android:layout_width="720px"
-        android:layout_height="480px"
-        android:background="#0000ff00" >
-    </com.example.access1.CircleSurfaceView>
-    <!--
-    <SurfaceView
-        android:id="@+id/circle_surface_view"
-        android:layout_width="720px"
-        android:layout_height="480px"
-        android:layout_gravity="center_horizontal"
-        android:background="#0000ff00" >
-    </SurfaceView>
-    -->
+    <FrameLayout
+        android:id="@+id/frame_layout_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.example.access1.customview.MyTextureView
+            android:id="@+id/texture_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3000ff00" />
+
+        <SurfaceView
+            android:id="@+id/circle_surface_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/take_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/green_button_shape"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/capture_button_shape"
         android:padding="5dp"
-        android:text="识别"
         android:textColor="#ffffff"
-        android:textSize="20sp" />
+         />
 
     <ImageView
         android:id="@+id/take_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         />
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

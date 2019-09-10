@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.access1"
     android:versionCode="1"
-    android:versionName="1.1" >
+    android:versionName="1.5">
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -17,74 +17,59 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.access1.MyFileProvider"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/files_path" />
         </provider>
 
-        <activity android:name=".MainActivity" >
-        </activity>
-         <activity android:name=".VisitLogActivity" >
-        </activity>
-         <activity android:name=".VisitLogDetailActivity" >
-        </activity>
-        <activity android:name=".ApplyHandleActivity" >
-        </activity>
-        <activity android:name=".GetApplyActivity" >
-        </activity>
-        <activity android:name=".RecognizeResultActivity" >
-        </activity>
-        <activity android:name=".RecognizeActivity" >
-        </activity>
-        <activity android:name=".BaseActivity" >
-        </activity>
         <activity
-            android:name=".s2RecognizeTest"
-            android:launchMode="singleTop" >
-        </activity>
-        <activity android:name=".sInfoInputApply" >
-        </activity>
-        <activity android:name=".sBrokenLogActivity" >
-        </activity>
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".activity.InformationInputActivity"></activity>
+        <activity android:name=".activity.InfoInputTeacherActivity"></activity>
+        <activity android:name=".activity.GetVisitLogActivity"></activity>
+        <activity android:name=".activity.VisitLogDetailActivity"></activity>
+        <activity android:name=".activity.ApplyHandleActivity"></activity>
+        <activity android:name=".activity.GetApplyActivity"></activity>
+        <activity android:name=".activity.RecognizeResultActivity"></activity>
+        <activity android:name=".activity.RecognizeActivity"></activity>
+        <activity android:name=".activity.BaseActivity"></activity>
         <activity
-            android:name=".sFeedBackActivity"
-            android:windowSoftInputMode="stateVisible" >
-        </activity>
+            android:name=".activity.sRecognizeTestActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name=".activity.sInfoInputApply"></activity>
+        <activity android:name=".activity.sBrokenLogActivity"></activity>
+        <activity android:name=".activity.BrokenLogActivity"></activity>
         <activity
-            android:name=".sChangePwdActivity"
-            android:windowSoftInputMode="stateVisible" >
-        </activity>
-        <activity android:name=".sInformationInputActivity" >
-        </activity>
-        <activity android:name=".sMainActivity" >
-        </activity>
-        <activity android:name=".BrokenLogDetailActivity" >
-        </activity>
-        <activity android:name=".sInfoInputStudentActivity" >
-        </activity>
-        <activity android:name=".sInfoInputRelativeActivity" >
-        </activity>
+            android:name=".activity.sFeedBackActivity"
+            android:windowSoftInputMode="stateVisible"></activity>
         <activity
-            android:name=".FeedBackActivity"
-            android:windowSoftInputMode="stateVisible" >
-        </activity>
+            android:name=".activity.sChangePwdActivity"
+            android:windowSoftInputMode="stateVisible"></activity>
+        <activity android:name=".activity.sInformationInputActivity"></activity>
         <activity
-            android:name=".ChangePwdActivity"
-            android:windowSoftInputMode="stateVisible" >
-        </activity>
-        <activity android:name=".VerifyActivity" >
-        </activity>
-        <activity android:name=".ManageObjectActivity" >
-        </activity>
+            android:name=".activity.sMainActivity"
+            android:launchMode="singleTask"
+           ></activity>
+        <activity android:name=".activity.BrokenLogDetailActivity"></activity>
+        <activity android:name=".activity.sInfoInputStudentActivity"></activity>
+        <activity android:name=".activity.sInfoInputRelativeActivity"></activity>
         <activity
-            android:name=".SplashActivity"
-            android:label="@string/app_name" >
+            android:name=".activity.FeedBackActivity"
+            android:windowSoftInputMode="stateVisible"></activity>
+        <activity
+            android:name=".activity.ChangePwdActivity"
+            android:windowSoftInputMode="stateVisible"></activity>
+        <activity android:name=".activity.ManageObjectActivity"></activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -92,14 +77,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible" >
-        </activity>
-        <activity android:name=".HaveToolBarActivity" >
-        </activity>
-        <activity android:name=".sBrokenLogDetailActivity" >
-        </activity>
+           ></activity>
+        <activity android:name=".activity.HaveToolBarActivity"></activity>
+        <activity android:name=".activity.sBrokenLogDetailActivity"></activity>
     </application>
 
 </manifest>
