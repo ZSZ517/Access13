@@ -13,28 +13,29 @@
     </string-array>
 
     <string-array name="groupId">
-        <item>n1</item>
-        <item>n2</item>
-        <item>n3</item>
-        <item>n4</item>
-        <item>n5</item>
-        <item>n6</item>
-        <item>n7</item>
-        <item>n8</item>
-        <item>n9</item>
-        <item>n10</item>
-        <item>n11</item>
-        <item>n12</item>
-        <item>n13</item>
-        <item>n14</item>
-        <item>n15</item>
-        <item>n16</item>
-        <item>n17</item>
-        <item>n18</item>
-        <item>n19</item>
-        <item>n20</item>
-        <item>n22</item>
-        <item>n23</item>
-        <item>n24</item>
+        <item>1栋</item>
+        <item>2栋</item>
+        <item>3栋</item>
+        <item>4栋</item>
+        <item>5栋</item>
+        <item>6栋</item>
+        <item>7栋</item>
+        <item>8栋</item>
+        <item>9栋</item>
+        <item>10栋</item>
+        <item>11栋</item>
+        <item>12栋</item>
+        <item>13栋</item>
+        <item>14栋</item>
+        <item>15栋</item>
+        <item>16栋</item>
+        <item>17栋</item>
+        <item>18栋</item>
+        <item>19栋</item>
+        <item>20栋</item>
+        <item>22栋</item>
+        <item>23栋</item>
+        <item>24栋</item>
+        <item>25栋</item>
     </string-array>
 </resources>

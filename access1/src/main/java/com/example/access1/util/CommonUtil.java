@@ -18,7 +18,7 @@ public class CommonUtil {
 
 			@Override
 			public void run() {
-				// TODO 自动生成的方法存根
+
 				Toast toast = Toast.makeText(context, null, Toast.LENGTH_SHORT);
 				toast.setText(string);// + " 打印类名：" + context.getClass().toString().substring(s.lastIndexOf(".") + 1)
 				toast.show();

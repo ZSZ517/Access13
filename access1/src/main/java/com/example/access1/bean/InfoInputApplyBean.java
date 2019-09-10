@@ -2,6 +2,7 @@ package com.example.access1.bean;
 
 import java.util.List;
 
+
 public class InfoInputApplyBean {
 
 	public List<ConcreteData> getData() {

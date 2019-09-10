@@ -2,14 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/ApplyHandleActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/BaseActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/BrokenLogActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/BrokenLogDetailActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/ChangePwdActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/HaveToolBarActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/ApplyHandleActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/BaseActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/BrokenLogActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/BrokenLogDetailActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/ChangePwdActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/HaveToolBarActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/activity/sBrokenLogDetailActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/fragments/MyFragment.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/access1/src/main/java/com/example/access1/sBrokenLogDetailActivity.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

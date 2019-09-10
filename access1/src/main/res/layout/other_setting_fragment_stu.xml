@@ -12,12 +12,12 @@
         android:gravity="center"
         android:orientation="vertical" >
 
-        <com.example.access1.PorterDuffViewImageView
+        <com.example.access1.customview.PorterDuffViewImageView
             android:id="@+id/porterDuffViewImageView"
             android:layout_width="96dp"
             android:layout_height="96dp"
             >
-        </com.example.access1.PorterDuffViewImageView>
+        </com.example.access1.customview.PorterDuffViewImageView>
         <!--
         <ImageView
             android:id="@+id/portrait_iv"
